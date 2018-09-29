@@ -17,6 +17,5 @@ int main()
 	bt1.PrintPostOrder(bt1.node());
 	cout<<"\n";
 	cout<<bt1.getWeightofBinaryTree()<<"\n";
-	cout<< bt1.node()->data;
 	return 0;	
 }

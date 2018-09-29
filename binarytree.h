@@ -10,10 +10,11 @@ using namespace std;
 class binarytree
 {
 private:
-	Node* root;
+	
 	int weight_nodes;
 
 public:
+	Node* root;
 	binarytree(){
 		root =  NULL;
 		weight_nodes = 0;

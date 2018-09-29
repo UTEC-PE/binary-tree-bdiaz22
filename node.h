@@ -8,11 +8,11 @@ struct Node {
 
 	Node(int data, Node* left, Node* right)
 	{
-		data = data;
+		this->data = data;
 		this->left = left;
 		this->right = right;
 	}
-	
+
 };
 
 #endif

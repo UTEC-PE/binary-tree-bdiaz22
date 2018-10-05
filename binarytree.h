@@ -6,7 +6,7 @@
 
 #include <iostream>
 using namespace std;
-
+ // No hay remove
 class binarytree
 {
 private:
@@ -23,14 +23,14 @@ public:
 	{
 		return root;
 	}
-	Iterator begin()
+	Iterator begin() // Cómo estás probando tu iterator?
 	{
 		Iterator start(root);
 		return start;
 	}
 
 
-	void insert(int dat,Node* &node)
+	void insert(int dat,Node* &node) // No debería tener que enviarse el root
 	{
 		if(node == NULL)
 		{
@@ -41,8 +41,8 @@ public:
 			insert(dat,node->left);
 		else if(dat > node->data)
 			insert(dat,node->right);
-		else
-			cout<<"Data exist in binary tree"<<"\n";
+		/*else
+			cout<<"Data exist in binary tree"<<"\n";*/
 	}
 	int getWeightofBinaryTree()
 	{
@@ -84,6 +84,7 @@ public:
 		}
 	}
 	~binarytree(){
+		// No hay destructor
 	}
 	
 };
